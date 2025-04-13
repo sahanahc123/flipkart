@@ -4,39 +4,82 @@
   <meta charset="UTF-8">
   <title>Sahana HC - Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
     header {
-      background-color: #2e86de;
-      color: white;
-      padding: 20px;
+      background-color: #1e3d59;
+      color: #fff;
+      padding: 40px 20px;
       text-align: center;
     }
+
+    header h1 {
+      font-size: 36px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
     section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
+
     h2 {
-      color: #2e86de;
+      color: #1e3d59;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #1e3d59;
+      padding-bottom: 5px;
     }
+
     ul {
-      padding-left: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
+
     a {
-      color: #2e86de;
+      color: #1e3d59;
       text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info p, .contact-info a {
+      margin-bottom: 5px;
+      display: block;
+    }
+
     footer {
+      background-color: #1e3d59;
+      color: #fff;
       text-align: center;
-      padding: 15px;
-      background-color: #2e86de;
-      color: white;
-      margin-top: 20px;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    .project, .experience {
+      margin-bottom: 25px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #0d6efd;
     }
   </style>
 </head>
@@ -44,32 +87,29 @@
 
 <header>
   <h1>Sahana HC</h1>
-  <p>Electronics and Communication Engineering Student</p>
+  <p>Electronics and Communication Engineer | Aspiring Developer</p>
 </header>
 
-<section>
+<section class="contact-info">
   <h2>Contact</h2>
-  <p><strong>Email:</strong> <a href="mailto:sahanahc83@gmail.com">sahanahc83@gmail.com</a></p>
-  <p><strong>Phone:</strong> 9019987667</p>
-  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sahanahc" target="_blank">linkedin.com/in/sahanahc</a></p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/sahanahc123" target="_blank">github.com/sahanahc123</a></p>
+  <p><span class="highlight">Email:</span> <a href="mailto:sahanahc83@gmail.com">sahanahc83@gmail.com</a></p>
+  <p><span class="highlight">Phone:</span> 9019987667</p>
+  <p><span class="highlight">LinkedIn:</span> <a href="https://www.linkedin.com/in/sahanahc" target="_blank">linkedin.com/in/sahanahc</a></p>
+  <p><span class="highlight">GitHub:</span> <a href="https://github.com/sahanahc123" target="_blank">github.com/sahanahc123</a></p>
 </section>
 
 <section>
   <h2>Education</h2>
-  <p><strong>BE in Electronics and Communication</strong><br>
-     PDIT, Hosapete (VTU)<br>
-     CGPA: 8.8 (Till 7th Semester)<br>
-     Expected Graduation: May 2025</p>
-  <p>12th: 75%<br>
-     10th: 97.12%</p>
+  <p><strong>Bachelor of Engineering (ECE)</strong> — PDIT, Hosapete (VTU)<br>
+     <span class="highlight">CGPA:</span> 8.8 (Till 7th Semester) | <span class="highlight">Graduation:</span> May 2025<br>
+     <span class="highlight">12th:</span> 75% | <span class="highlight">10th:</span> 97.12%</p>
 </section>
 
 <section>
   <h2>Technical Skills</h2>
   <ul>
     <li><strong>Languages:</strong> C, Python, C++ (Basics), Java (Learning), HTML, CSS</li>
-    <li><strong>DSA:</strong> Learning with hands-on practice</li>
+    <li><strong>DSA:</strong> Learning with hands-on experience</li>
     <li><strong>Networking:</strong> TCP, UDP, ARP, 802.11 (Basics), Ethernet, WLAN</li>
     <li><strong>Databases:</strong> SQL</li>
     <li><strong>Technologies:</strong> IoT, Blockchain (Basics)</li>
@@ -79,49 +119,55 @@
 
 <section>
   <h2>Projects</h2>
+  <div class="project">
+    <h3>Android Application-Based Robotic Car</h3>
+    <ul>
+      <li>Created a Bluetooth-controlled car using Arduino & MIT App Inventor.</li>
+      <li>Used HC-05 Bluetooth module and L298N motor driver for control.</li>
+      <li>Enhanced the UI and control response for smoother performance.</li>
+    </ul>
+  </div>
 
-  <h3>Android Application-Based Robotic Car</h3>
-  <ul>
-    <li>Created a Bluetooth-controlled robotic car using Arduino and MIT App Inventor.</li>
-    <li>Integrated HC-05 Bluetooth module and L298N motor driver.</li>
-    <li>Improved responsiveness and mobile control features.</li>
-  </ul>
-
-  <h3>Women Safety System - Rescue Her</h3>
-  <ul>
-    <li>Developed an IoT-based safety device with real-time alerts.</li>
-    <li>Integrated GPS and emergency notification features.</li>
-    <li>Tested for real-time emergency use cases.</li>
-  </ul>
+  <div class="project">
+    <h3>Women Safety System – Rescue Her</h3>
+    <ul>
+      <li>Designed an IoT-based safety device with real-time GPS tracking & alerts.</li>
+      <li>Integrated emergency notification systems for immediate assistance.</li>
+      <li>Tested under various scenarios to ensure reliability in critical situations.</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h2>Experience</h2>
+  <div class="experience">
+    <h3>Intern – Embedded System Design | RLogic Technologies</h3>
+    <p><em>Oct 25, 2023 – Nov 25, 2023</em></p>
+    <ul>
+      <li>Developed Python scripts to automate hardware interaction.</li>
+      <li>Worked on IoT-based microcontroller integration and optimization.</li>
+    </ul>
+  </div>
 
-  <h3>Embedded System Design Intern – RLogic Technologies</h3>
-  <p>Oct 25, 2023 – Nov 25, 2023</p>
-  <ul>
-    <li>Developed Python-based automation for hardware interaction.</li>
-    <li>Worked on microcontroller integration for IoT projects.</li>
-  </ul>
-
-  <h3>PCB IoT Designer Intern – Kshema Technologies</h3>
-  <p>Sep 20, 2022 – Nov 14, 2022</p>
-  <ul>
-    <li>Designed and tested IoT-based PCB systems for real-time monitoring.</li>
-    <li>Collaborated on sensor and microcontroller integration.</li>
-  </ul>
+  <div class="experience">
+    <h3>Intern – PCB IoT Designer | Kshema Technologies</h3>
+    <p><em>Sep 20, 2022 – Nov 14, 2022</em></p>
+    <ul>
+      <li>Designed PCBs for real-time monitoring with sensors & microcontrollers.</li>
+      <li>Improved system performance through component testing and debugging.</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h2>Certifications</h2>
   <ul>
-    <li>TCS iON Career Edge - Young Professional (15-day Career Skills Training)</li>
+    <li>TCS iON Career Edge - Young Professional (15-day certification on soft skills)</li>
   </ul>
 </section>
 
 <footer>
-  <p>© 2025 Sahana HC | Portfolio Website</p>
+  <p>© 2025 Sahana HC | Portfolio</p>
 </footer>
 
 </body>
